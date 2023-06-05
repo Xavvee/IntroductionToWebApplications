@@ -1,0 +1,54 @@
+<div class="form-div">
+    <h2>Zmodyfikuj wycieczkę!</h2>
+    <form [formGroup]="tripModifyForm">
+        <div class="center">
+          <label for="name">Nazwa wycieczki:</label>
+          <input id="name" type="text" formControlName="tripname" />
+        </div>
+      
+        <div class="center">
+          <label for="country">Kraj:</label>
+          <input id="country" country="text" formControlName="tripcountry" />
+        </div>
+      
+        <div class="center">
+          <label for="startdate">Data rozpoczęcia:</label>
+          <input id="startdate" type="text" formControlName="tripstartdate" />
+        </div>
+      
+        <div class="center">
+          <label for="enddate">Data zakończenia:</label>
+          <input id="enddate" type="text" formControlName="tripenddate" />
+        </div>
+      
+        <div class="center">
+          <label for="noofplaces">Liczba miejsc:</label>
+          <input id="noofplaces" type="text" formControlName="tripnoofplaces" />
+        </div>
+      
+        <div class="center">
+          <label for="price">Cena:</label>
+          <input id="price" type="text" formControlName="tripprice" />
+        </div>
+      
+        <div class="center">
+          <label for="shortdesc">Krótki opis:</label>
+          <input id="shortdesc" type="text" formControlName="tripshortdesc" />
+        </div>
+      
+        <div class="center">
+          <label for="imagelink">Ścieżka do zdjęcia:</label>
+          <input id="imagelink" type="text" formControlName="tripimagelink" />
+        </div>
+
+        <div class="center">
+          <label for="region">Kontynent:</label>
+          <input id="region" type="text" formControlName="tripregion" />
+        </div>
+      
+        <button type="submit" (click)="submitForm()">Modyfikuj!</button>
+        <p *ngIf="showIncorrect">Popraw błędy w modyfikowaniu wycieczki!</p>
+        <p *ngIf="showCorrect">Poprawnie zmodyfikowano wycieczkę!</p>
+      </form>
+      
+</div>

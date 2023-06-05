@@ -1,0 +1,30 @@
+.opinion {
+    display: flex;
+    flex-direction: row;
+    min-height: 25px;
+}
+
+.like:hover,
+.dislike:hover {
+    cursor: pointer;
+}
+
+.like,
+.dislike {
+    user-select: none;
+}
+
+.dislikes {
+    color: red;
+    font-weight: bolder;
+}
+
+.likes {
+    color: green;
+    font-weight: bolder;
+}
+
+p {
+    margin: 2px;
+    padding: 2px;
+}

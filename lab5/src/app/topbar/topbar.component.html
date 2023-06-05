@@ -1,0 +1,74 @@
+<!-- <div class="topbar">
+    <a routerLink="/">
+        <div class="name">
+            <h2><b>T</b>ravelia</h2>
+        </div>
+    </a>
+    <div class="topbar-menu">
+        <a routerLink="/trips" class="topbar-item">Oferty wycieczek</a>
+        <a routerLink="/cart" class="topbar-item">Koszyk</a>
+        <a routerLink="/notfound" class="topbar-item">O nas</a>
+        <a routerLink="/addtrip" class="topbar-item">Dodaj wycieczkę</a>
+    </div> 
+</div> -->
+
+<div class="topbar" >
+    <div class="navbar-left">
+      <a routerLink="/" >
+        <div class="name">
+            <h2><b>T</b>ravelia</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="topbar-menu">
+      
+      <a routerLink="/trips" >
+        <div class="topbar-item"  routerLinkActive="active-link">Oferty wycieczek</div>
+      </a>
+      <a routerLink="/cart">
+        <div class="topbar-item" routerLinkActive="active-link">
+          Koszyk
+        </div>
+      </a>
+      <a routerLink="/addtrip">
+        <div class="topbar-item" routerLinkActive="active-link">
+          Dodaj wycieczkę
+        </div>
+      </a>
+      <a routerLink="/notfound" >
+        <div class="topbar-item"  routerLinkActive="active-link">O nas</div>
+      </a>
+    </div>
+    <div class="hamburger-button hidden">
+      <button type="button" (click)="hamburgerHandler()">
+        <span [class.anim-1]="hamburgerOpened == true"></span>
+        <span [class.anim-2]="hamburgerOpened == true"></span>
+        <span [class.anim-3]="hamburgerOpened == true"></span>
+      </button>
+    </div>
+    <div class="menu-ham-items" [class.hidden]="hamburgerOpened == false" [class.visible]="hamburgerOpened == true" [class.rolled-in]="hamburgerOpened == true" [class.rolled-out]="hamburgerOpened == false">
+      <div class="wrapper">
+        <a routerLink="/trips">
+          <div class="topbar-item" routerLinkActive="active-link">
+            Oferty wycieczek
+          </div>
+        </a>
+        <a routerLink="/cart">
+            <div class="topbar-item" routerLinkActive="active-link">
+              Koszyk
+            </div>
+          </a>
+          <a routerLink="/addtrip">
+            <div class="topbar-item" routerLinkActive="active-link">
+              Dodaj wycieczkę
+            </div>
+          </a>
+        <a routerLink="/notfound">
+          <div class="topbar-item" routerLinkActive="active-link">
+            About us
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>

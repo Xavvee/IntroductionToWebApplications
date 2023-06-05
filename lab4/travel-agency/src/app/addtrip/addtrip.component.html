@@ -1,0 +1,49 @@
+<div class="form-div">
+    <h2>Dodaj wycieczkę!</h2>
+    <form [formGroup]="tripAddForm">
+        <div>
+          <label for="name">Nazwa wycieczki:</label>
+          <input id="name" type="text" formControlName="tripname" />
+        </div>
+      
+        <div>
+          <label for="country">Kraj:</label>
+          <input id="country" country="text" formControlName="tripcountry" />
+        </div>
+      
+        <div>
+          <label for="startdate">Data rozpoczęcia:</label>
+          <input id="startdate" type="text" formControlName="tripstartdate" />
+        </div>
+      
+        <div>
+          <label for="enddate">Data zakończenia:</label>
+          <input id="enddate" type="text" formControlName="tripenddate" />
+        </div>
+      
+        <div>
+          <label for="noofplaces">Liczba miejsc:</label>
+          <input id="noofplaces" type="text" formControlName="tripnoofplaces" />
+        </div>
+      
+        <div>
+          <label for="price">Cena:</label>
+          <input id="price" type="text" formControlName="tripprice" />
+        </div>
+      
+        <div>
+          <label for="shortdesc">Krótki opis:</label>
+          <input id="shortdesc" type="text" formControlName="tripshortdesc" />
+        </div>
+      
+        <div>
+          <label for="imagelink">Ścieżka do zdjęcia:</label>
+          <input id="imagelink" type="text" formControlName="tripimagelink" />
+        </div>
+      
+        <button type="submit" (click)="submitForm()">Dodaj!</button>
+        <p *ngIf="incorrect">Popraw błędy w dodawaniu wycieczki!</p>
+        <p *ngIf="correct">Poprawnie dodano wycieczkę!</p>
+      </form>
+      
+</div>

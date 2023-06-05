@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    font-size: 2.8em;
+    margin: 1.2em;
+}
+
+button {
+    text-align: center;
+    width: fit-content;
+    height: 6vh;
+    border-radius: 25px;
+    font-size: 2em;
+    padding: 1em;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    margin: auto;
+    margin-top: 4%;
+}
+
+p{
+    text-align: center;
+}

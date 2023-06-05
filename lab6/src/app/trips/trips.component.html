@@ -1,0 +1,44 @@
+<div class="ordered">
+    <h2 [ngStyle]="{
+        'background-color': getOrderedQuantity(trips) > 10 ? 'green' : 'red'}">
+      Zamówiłeś już: {{ getOrderedQuantity(trips) }} wycieczek!
+    </h2>
+  </div>
+
+<a routerLink="/cart" class="bottom-right">
+    <div class="cart" (click)="alertLogIn()">
+        <p>Wartość koszyka: {{getCartValue()}}zł</p>
+        <p>{{getOrderedQuantity(trips)}} wycieczek</p>
+    </div>
+</a>
+
+<div class="trips" *ngIf="trips!=[]">
+    <div class="trip" [ngClass]="{
+        'most-expensive':trip.price==getMaxPrice(trips).price,
+        'least-expensive':trip.price==getMinPrice(trips).price}"
+        *ngFor="let trip of trips">
+        <a routerLink="/trips/{{trip.id}}"><img src="{{trip.imagelink}}" alt="{{trip.name}}" (click)="alertLogIn()"></a>
+        <h3>{{trip.name}}</h3>
+        <p class="country">Kraj: {{trip.country}}</p>
+        <p class="date">Termin: {{trip.startdate}}-{{trip.enddate}}</p>
+        <p class="desc">{{trip.shortdesc}}</p>
+        <div class="bottom">
+            <span class="price">{{ trip.price }} {{ trip.currency }}</span>
+            <div class="btn-container">
+                <div *ngIf="trip.noofplaces>=1" class="addCart btn" (click)="addToCart(trip)">
+                    <p class="plus">✚</p>
+                </div>
+                <div class="removeCart btn" (click)="removeFromCart(trip)"><p class="minus">⚊</p></div>
+            </div>
+        </div>
+        <div class="bottom-info">
+            <p class="quantity">Zakupione miejsca: {{getNumberOfBooked(trip)}}</p>
+        </div>
+        <p *ngIf="trip.noofplaces<=5" class="remaining">
+            Pozostało {{trip.noofplaces}} miejsc!
+        </p>
+        <p *ngIf="trip.noofplaces>5" class="remaining"></p>
+        <div class="delete" (click)="tripDeleter(trip)">USUŃ WYCIECZKĘ!</div>
+    </div>
+</div>
+

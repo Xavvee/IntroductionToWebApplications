@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+        position: relative;
+}
+
+#dot{
+    width: 70px;
+    height: 70px;
+    background-color: lightblue;
+    position: absolute;
+    z-index: 9;
+    transition: transform 2s ease-in-out;
+    background: transparent;
+}
+.innerdot{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    border-radius: 50%;
+    z-index: 9;
+}
+#whole{
+    width: 100%;
+    height: 100vh;
+}
+#playground{
+    height: 500px;
+    width: 900px;   
+    background-color: lightblue;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#prompter{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+p{
+    font-size: 20px;
+}

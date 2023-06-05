@@ -1,0 +1,61 @@
+.menu{
+    width: 210px;
+    height: 300px;
+    margin-left: 0;
+    transition: width 2s;
+}
+
+.menuduo{
+    height: 300px;
+    width: 50px;
+    margin-left: 0;
+    transition: width 2s;
+}
+
+.menu a {
+    height: 30px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size:15px;
+    color: blue;
+    font-weight: bold;
+
+}
+  
+.menu a:hover {
+    background-color: #ccc;
+}
+
+a:focus{
+    background-color: turquoise;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+@media (max-width: 600px){
+    .menu{
+        display: none;   
+    }
+    .menuduo{
+        display: block;
+    }
+}
+
+@media (min-width: 600px){
+    .menu{
+        display: block;
+    }
+    .menuduo{
+        display: none;
+    }
+}

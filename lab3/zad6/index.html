@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="adresses">
+            
+        </div>
+        <section>
+            <form action="#">
+                <div class="input-container">
+                    <span>IMIĘ I NAZWISKO</span>
+                    <input 
+                        type="text"
+                        required="true"
+                        id="name"
+                        name="name"
+                        class="normal-input"
+                        required pattern="[\p{Lu}]{1}[\p{Ll}]+[ ]{1}[\p{Lu}]{1}[\p{Ll}]+|[\p{Lu}]{1}[\p{Ll}]+[ ]{1}[\p{Lu}]{1}[\p{Ll}]+[-]{1}[\p{Lu}]{1}[\p{Ll}]+">
+
+                </div>
+                <div class="input-container">
+                    <span>TELEFON</span>
+                    <input 
+                            type="text"
+                            required ="true"
+                            id="phone"
+                            name="phone"
+                            class="normal-input"
+                            reqired pattern="(?:\s*\d){9}|[+]{1}(?:\s*\d){12}"
+                            >
+                </div>
+                <div id="add">Dodaj</div>
+            </form>
+        
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

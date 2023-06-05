@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>W wyznaczonym miejscu kliknij przycisk</h1>
+    <p id="tekst">Tutaj pojawi się twoje imię</p>
+    <button id="Przycisk" >Kliknij, aby wprowadzić imie</button>
+    <script>
+        let element = document.getElementById('Przycisk')
+        element.addEventListener('click',Imie)
+    function Imie(){
+        let person=prompt("Wprowadź swoje imię:");
+        if(person!=null){
+            if(person[person.length-1]=='a'){
+                document.getElementById("tekst").innerHTML =
+                "Witam pania: " + person;
+            }
+            else{
+                document.getElementById("tekst").innerHTML =
+                "Witam pana: " + person;
+            }
+        }
+    }
+    </script>
+</body>
+</html>

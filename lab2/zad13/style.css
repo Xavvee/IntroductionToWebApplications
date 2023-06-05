@@ -1,0 +1,303 @@
+body{
+    margin: 0.3%;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 16% 70% auto;
+    grid-template-rows: 10vh 10vh 70vh auto 10vh;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-areas:
+    "header header header"
+    "left navi right"
+    "left main right"
+    ". main ."
+    "footer footer footer"
+}
+
+
+.head{
+    grid-area: header;
+    border: solid 3px red;
+    border-radius: 5px;
+}
+
+.left-side{
+    border:3px solid red;
+    grid-area: left;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size:15px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index:5;
+    border-radius: 5px;
+    top: 1%;
+}
+
+.socials{    
+    height: 30%;
+    width: 40%;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#photo{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+
+.navigation{
+    border:3px solid red;
+    grid-area: navi;
+    border-radius: 5px;
+}
+
+.right-side{
+    border:3px solid red;
+    grid-area: right;   
+    border-radius: 5px;
+}
+
+.foot{
+    border:3px solid red;
+    grid-area: footer;   
+    border-radius: 5px;
+}
+
+.center{
+    border: 3px solid red;
+    grid-area: main;
+    border-radius: 5px;
+}
+main{
+    background: url(/lab2/zdjecia/zad13/tlo.jpg);
+}
+article{
+    display:flex;
+    position:relative;
+    width:95%;
+    margin-bottom:7vh;
+    margin-top: 2vh;
+    margin-right: auto;
+    margin-left: auto;
+    height:45vh;
+}
+.header-background{
+    position:absolute;
+    width:90%;
+    height:100%;
+    z-index:0;
+    background-color:rgba(255, 255, 255, 0.541);
+    transform: skew(-15deg) translate(3%,0);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inside{
+    width:100%;
+    height:100%;
+    z-index:2;
+    margin-left:10%;
+    margin-right:10%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text{
+    margin:40px;
+    margin-left:10px;
+}
+
+.photo{
+    margin:40px;
+    margin-right:0px;
+    width: 20%;
+    height: 20%;
+}
+
+.article-photo{
+    width: 30%;
+    height: 50%;
+    margin-left: 1%;
+    margin-right: auto;
+    border-radius:50%;
+}
+
+#heading{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button{
+    cursor:pointer;
+}
+
+.form{
+    position:relative;
+    display:flex;
+    height:65vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.form-cut{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(100deg,rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255,0.0) 55.2%);
+}
+
+.form-inner{
+    position:relative;
+    width:80%;
+    background: url(/lab2/zdjecia/zad13/gory.jpg);
+    background-size:cover;
+    background-position: bottom;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-info{
+   z-index: 2;
+   position:relative;
+   display:flex;
+   flex-direction: column;
+   width:50%;
+   margin-left: 3%;
+}
+
+.form-info form input[type=text], .form-container form input[type=email]{
+    margin-bottom:5vh;
+    width:80%;
+    display:block;
+}
+.form-info label{
+    font-size:12px;
+}
+.form-info form input[type=radio]{
+    display:inline;
+}
+
+.form-info input{
+    border:0;
+    padding:10px;
+}
+
+.form-info .next-step{
+    width:fit-content;      
+    color:white;
+    background-color:rgb(0, 189, 0);
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    margin-top:2vh;
+}
+
+
+p#title2{
+    font-weight: bold;
+    color:rgb(0, 189, 0);
+    font-size:33px;
+    margin-bottom:5vh;
+}
+
+@media only screen and (max-width:1025px){
+    .grid-container{
+        grid-template-columns: 15% auto;
+        grid-template-rows: 10vh 10vh 70vh auto 10vh;
+        grid-template-areas:
+        "header header"
+        "navi navi"
+        "left main"
+        ". main"
+        "right footer"
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .grid-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 10vh  auto 10vh 10vh;
+        grid-template-areas:
+        "header"
+        "navi"
+        "main"
+        "right"
+        "footer"
+    }
+
+    .left-side{
+        background-color: white;
+        display:flex;
+        width:95%;
+        flex-direction: row;
+        height:25vh;
+        position:fixed;
+        align-items: center;
+        justify-content: space-evenly;
+        top:80%;
+    }
+    
+    .socials{    
+        margin-top: 1%;
+        height: 35%;
+        width: 25%;
+    }
+    
+    #name{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    #photo{
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        margin-top: 2vh;
+        margin-bottom: auto;
+    }
+    .card{
+        width: fit-content;
+        height: 100%;
+    }
+
+    #dane{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:460px){
+    #name{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #dane{
+        font-size: 9px;
+    }
+    .socials{    
+        margin-top: 2vh;
+        margin-bottom: auto;
+        height: 25%;
+        width: 25%;
+    }
+}

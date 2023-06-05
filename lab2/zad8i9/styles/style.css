@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(355deg, white 51%, #1560bd 51.3%);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.moreinfo{
+    border-radius: 15px;
+    border: solid 1px white;
+    padding: 5px;
+    margin: auto;
+    width: 30%;
+    margin-left: 0;
+    text-align: center;
+}
+
+.moreinfo:hover{
+    color: #1560bd;
+    background-color: white;
+}
+.slideLeft{
+    display: inline-block;
+    position: relative; 
+    height: auto;
+    width: 47%;
+    margin-top: 7vh;
+    margin-bottom: auto;
+    margin-left: 12%;
+    margin-right: auto;
+    color: white;
+    animation: slideInLeft 2s forwards;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+    @-moz-keyframes slideInLeft {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+    @keyframes slideInLeft {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.slideRight{
+    display: inline-block;
+    position: relative;
+    height: 40%;
+    width: 22%;
+    margin-top: 7vh;
+    margin-right: 12%;
+    margin-bottom: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255,0.8);
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    animation: slideInRight 2s forwards;
+}
+
+@-webkit-keyframes slideInRight {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+    @-moz-keyframes slideInRight {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+    @keyframes slideInRight {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.text-line{
+    font-size: medium;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid gray 2px;
+    padding: 3px 10px;
+  }
+  
+  input[type=submit] {
+    width: 30%;
+    background-color: #1560bd;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 3% 6%;
+    margin: 15px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+
+@media only screen and (max-width:670px){
+    .slideLeft{
+        height: 40vh;
+        width: 80%;
+        margin-top: 3vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 8vh;
+        animation: slideInUpper 3s forwards;
+        font-size: medium;
+    }
+
+    .slideRight{
+        height: 40vh;
+        width: auto;
+        margin-top: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 7vh;
+        animation: slideInBottom 3s forwards;
+    }
+
+    @-webkit-keyframes slideInBottom {
+        0% {
+            transform: translateY(900px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+        }
+        @-moz-keyframes slideInBottom {
+        0% {
+            transform: translateY(900px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+        }
+        @keyframes slideInBottom {
+        0% {
+            transform: translateY(900px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+        @-webkit-keyframes slideInUpper {
+            0% {
+                transform: translateY(-900px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+            }
+            @-moz-keyframes slideInUpper {
+            0% {
+                transform: translateY(-900px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+            }
+            @keyframes slideInUpper {
+            0% {
+                transform: translateY(-900px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+}
+
+@media only screen and (max-width:370px){
+    .slideLeft{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:250px){
+    .slideLeft{
+        font-size: x-small;
+    }
+}

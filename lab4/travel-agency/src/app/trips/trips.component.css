@@ -1,0 +1,151 @@
+.trips{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trip{
+    flex-direction: column;
+    display: flex;
+    flex-basis: 25%;
+    background-color: aquamarine;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    padding: 5px;
+    margin: 3%;
+}
+
+img{
+    width: 100%;
+    height: 35vh;
+    border-radius: 50%;
+}
+
+h3{
+    margin-top:0.5em;
+    margin-bottom: 0.1em;
+    font-size: 1.8em;
+    text-align: center;
+}
+h2{
+    padding:1.1em;
+}
+p{
+    margin-top:0.1em;
+    margin-bottom:0.1em;
+}
+p.country{
+    margin-bottom:1em;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+}
+p.date{
+    text-align: center;
+}
+.desc{
+    min-height:100px;
+    margin-bottom:1em;
+    text-align: center;
+    font-size: 1.3em;
+}
+.date{
+    color:black;
+    font-style: italic;
+    margin-bottom:1em;
+    min-height:60px;
+}
+.bottom{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    user-select: none;
+}
+.btn-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.btn{
+    font-size:1.2em;
+    padding:0.5em;
+    border-radius:50%;
+    user-select: none;
+    margin:0.4em;
+    cursor:pointer;
+    transition: 250ms ease all;
+}
+.addCart{
+    background-color:green;
+}
+
+.addCart:hover{
+    background-color:rgb(0, 173, 0);
+    transition: 250ms ease all;
+}
+
+.removeCart{
+    background-color: rgb(167, 0, 0);
+}
+
+.removeCart:hover{
+    background-color: rgb(255, 0, 0);
+    transition: 250ms ease all;
+}
+
+.price{
+    font-size:2.3em;
+    font-weight: bold;
+}
+
+.bottom-info{
+    min-height:20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.quantity{
+    font-weight: bold;
+    margin:0.1em;
+    padding:0.1em;
+}
+.remaining  {
+    color:red;
+    min-height:25px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.most-expensive{
+    border:2px solid green;
+}
+
+.least-expensive{
+    border:2px solid red;
+}
+
+.delete{
+    background-color: red;
+    font-size:1em;
+    border-radius: 25px;
+    text-align: center;
+    cursor:pointer;
+    user-select: none;
+    letter-spacing: 0em;
+    transition: 250ms ease all;
+}
+
+.delete:hover{
+    font-weight: bolder;
+    transition: 250ms ease all;
+}
+
+

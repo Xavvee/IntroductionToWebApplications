@@ -1,0 +1,271 @@
+body{
+    padding: 0;
+    margin-top: 2%;
+    background-color: aquamarine;
+    font-family:'Times New Roman', Times, serif
+}
+
+
+main{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.karta{
+    display: inline-block;
+    width: 22%;
+    height: 95vh;
+    flex-basis:22%;
+}
+
+
+.wnetrze{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.gora{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+
+.dol{
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.przod{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tyl{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.image{
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position:top;
+    background-size: cover; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;}
+
+.image-overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.gora-napisy{
+    position:absolute;
+    width:95%;
+    z-index:1;
+    top:25%;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.gora-tekst{
+    font-size: 28px;
+    width:fit-content;
+    color:white;
+    padding:10px;
+    margin:-5px;
+}
+
+.dol-napisy{
+    width: 100%;
+    font-size: 14px;
+    color:gray;
+    text-align: center;
+}
+
+
+.dol-linia{
+    width:100%;
+    height:1.5px;
+    background-color:lightgray;
+    margin-top:15px;
+    margin-bottom:15px;
+
+}
+
+.karta-tyl{
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.tyl-tekst{
+    font-weight:bold;
+    font-size:22px;
+    color: white;
+}
+
+.cena{
+    font-size:66px;
+    color:white;
+}
+
+.rezerwacja{
+    margin-top:20vh;
+    background-color:white;
+    border-radius:25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color:rgba(0, 0, 0, 0.5);
+    transition: 300ms ease all;
+}
+
+.karta:hover .wnetrze{
+    transform:rotateY(180deg);
+}
+
+.tyl{
+    transform: rotateY(180deg);
+}
+
+.rezerwacja:hover{
+    background: red;
+    color:white;
+    -webkit-box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 500ms ease-in-out;
+}
+
+
+ 
+ 
+@media only screen and (max-width:1000px){ 
+    .karta{
+        flex-basis:35%;
+        margin-bottom:3vh;
+    }
+
+    .gora{
+        font-size:21px;
+    }
+
+    .dol{
+        margin:50px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .dol-napisy{
+        font-size:16px;
+    }
+}
+@media screen and (max-width:620px){
+    .karta{
+        flex-basis:65%;
+        margin-bottom:4vh;
+    }
+
+    .gora-napisy{
+        font-size:30px;
+    }
+
+    .dol{
+        margin:50px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .dol-napisy{
+        font-size:16px;
+    }
+
+
+}
+
+@media screen and (max-width:400px){
+    .karta{
+        flex-basis:70%;
+        margin-bottom:4vh;
+        height:70vh;
+    }
+
+    .gora-tekst{
+        font-size:20px;
+    }
+
+    .dol{
+        margin:15%;
+        margin-top:1vh;
+        margin-bottom:1vh;
+    }
+
+    .dol-napisy{
+        font-size:13px;
+
+    }
+
+    .dol-linia{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .cena{
+        font-size: 42px;
+    }
+
+    .tyl-tekst{
+        font-size: 12px;
+    }
+    .rezerwacja{
+        margin-top:50px;
+    }
+
+
+}

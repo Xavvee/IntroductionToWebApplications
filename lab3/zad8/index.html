@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="loginer">
+        
+          <label for="usrname">New Password</label>
+          <input type="password" id="passwd" name="passwd" placeholder="Password..." required>
+          <i class="far fa-eye" id="togglePassword1" style=" cursor: pointer;"></i>
+          <label for="psw">Repat new Password</label>
+          <input type="password" id="rptpasswd" name="rptpasswd" placeholder="Repeat password..."  required>  
+          <i class="far fa-eye" id="togglePassword2" style=" cursor: pointer;"></i>
+          <button  id="submit">Submit</button>
+        
+      
+      <div id="message">
+        <h3>Password requirements:</h3>
+        <p id="length" class="invalid">at least 8 characters</p>
+        <p id="special" class="invalid">at least one special character</p>
+        <p id="capital" class="invalid">at least one capital letter</p>
+        <p id="digits" class="invalid">at least one digit</p>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+

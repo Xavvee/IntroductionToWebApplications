@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200vh;
+}
+
+
+.wholething{
+    min-width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: #002D62;
+    border-radius: 10px;
+}
+
+.przeddiv{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    width: fit-content;
+}
+
+.rozmowca{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    text-align: center;
+}
+
+.doktor{
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: 2.4vh;
+    margin-bottom: auto;   
+    height:  26vh;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    border-radius: 5%;
+}
+
+.menuDolne{
+    float: none;
+    display: table;
+    position: absolute;
+    margin-bottom: -2.4vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    height: 22vh;
+}
+
+
+.kropkiNaBoku{
+    display: block;
+    position: absolute;
+    margin-bottom: 5vh;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 0px;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    height: 9.6vh;
+}
+
+@media only screen and (max-width: 400px){
+    .rozmowca{
+        border-radius: 10px;
+    }
+    .doktor{
+        height: 15vh;
+    }
+}

@@ -1,0 +1,21 @@
+nav{
+    position: fixed;
+    top: 0;
+    backface-visibility:hidden;
+    width:100%;
+    margin-bottom: 5%;
+}
+
+main{
+    min-width: 350px;
+    border: 15px;
+    margin: 10em 2em;
+    padding:1em;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+

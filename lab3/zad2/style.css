@@ -1,0 +1,18 @@
+img{
+    height: 500px;
+    width: 700px;
+    border: brown solid 3px;
+}
+
+.image0{
+    border: brown solid 3px;
+}
+.image1{
+    border: red solid 3px;
+}
+.image2{
+    border: blue solid 3px;
+}
+.image3{
+    border: green solid 3px;
+}

@@ -1,0 +1,23 @@
+<h3 *ngIf="cart.length>0">Koszyk:</h3>
+
+<!-- <div class="cart-item" *ngFor="let trip of cart">
+    <span>{{trip.name}}</span>
+    <span>{{trip.price|currency}}</span>
+</div>
+
+<div class="cart-value">
+    <p>
+        Wartość koszyka wynosi: {{tripsSum()|currency}}
+    </p>
+</div> -->
+
+<h1 *ngIf="cart.length==0">Koszyk jest pusty! Sprawdź oferty wycieczek<a routerLink="/trips"> tutaj</a> </h1>
+<div class="cart">
+    <ng-container *ngIf="cart.length>0">
+        <div *ngFor="let item of cart; index as idx">
+            <h3>{{idx+1}}. {{item.name}} - {{item.price}} zł</h3>
+        </div>
+        <h2>Wartość koszyka wynosi {{tripsSum() | number: '1.0-2'}} zł</h2>
+    </ng-container>
+    <h2 (click)="orderAll()">Zamów wycieczki!</h2>
+<div>

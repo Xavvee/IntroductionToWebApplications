@@ -1,0 +1,267 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.image{
+    width: 100%;
+    height: 93vh;
+    background-position:top;
+    background-size: cover;
+    background-image:url(/lab2/Lab2_repo/Zadanie4/tlo.jpg);
+}
+
+.image-overlay{
+    width: 100%;
+    height: 93vh;
+    background-color: rgba(108, 180, 238,0.6);
+}
+
+.header{
+    margin: auto;
+    width: auto;
+    height: 7vh;
+    background-color:rgba(108, 180, 238,0.95);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.nav-menu{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    letter-spacing: 1px;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.nav-branding{
+    width: 0;
+    font-size: 1.6rem;
+    margin-right: 25%;
+    margin-left:15%;
+}
+
+dropdown-content a:hover {
+    background-color: white;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    letter-spacing: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.rejestrowanie{
+    font-size: 0.9rem;
+    border: 3px white solid;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    padding: 1vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    text-align: center;
+    background-color: white;
+    color: rgba(108, 180, 238,0.95);
+}
+
+.logowanie{
+    
+    font-size: 0.9rem;
+    border: 3px white solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 1vh;
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.rejestrowanie:hover{
+    background-color: rgba(108, 180, 238,0.95);
+    color: white;
+}
+
+.logowanie:hover{
+    background-color: white;
+    color: rgba(108, 180, 238,0.95);
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.arrow-down {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+       border-top: 5px solid white;
+  }
+@media only screen and (max-width:1200px){
+    .nav-branding{
+        font-size: 1.3rem;
+        margin-right: 20%;
+        margin-left:10%;
+    }
+    .rejestrowanie{
+        font-size: 0.7rem;
+    }
+    
+    .logowanie{
+        
+        font-size: 0.7rem;
+    }
+
+    .nav-menu{
+        font-size: 0.9rem;
+        gap: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width:910px){
+    .nav-branding{
+        font-size: 1.1rem;
+        margin-right: 20%;
+        margin-left:8%;
+    }
+    .rejestrowanie{
+        font-size: 0.5rem;
+        
+    }
+    
+    .logowanie{
+        
+        font-size: 0.5rem;
+    }
+
+    .nav-menu{
+        font-size: 0.7rem;
+        gap: 10px;
+        letter-spacing: 1px;
+    }
+
+    .arrow-down{
+        border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+       border-top: 3.5px solid white;
+    }
+}
+
+@media only screen and (max-width:910px){
+    .nav-branding{
+        font-size: 0.9rem;
+        margin-right: 15%;
+        margin-left:4%;
+    }
+    .rejestrowanie{
+        font-size: 0.3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .logowanie{
+        
+        font-size: 0.3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-menu{
+        font-size: 0.5rem;
+        gap: 5px;
+        letter-spacing: 0.5px;
+    }
+
+    .arrow-down{
+        border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+       border-top: 2.5px solid white;
+    }
+}
+
+@media only screen and (max-width:490px){
+    .nav-branding{
+        font-size: 0.7rem;
+        margin-right: 15%;
+        margin-left:4%;
+    }
+    .rejestrowanie{
+        font-size: 0.2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .logowanie{
+        
+        font-size: 0.2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-menu{
+        font-size: 0.3rem;
+        gap: 2px;
+        letter-spacing: 0.3px;
+    }
+
+    .arrow-down{
+        border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+       border-top: 2px solid white;
+    }
+}

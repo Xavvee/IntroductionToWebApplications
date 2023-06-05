@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "travel-agency-cedfc": {
+      "hosting": {
+        "travel-agency": [
+          "travel-agency-cedfc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "travel-agency-cedfc"
+  }
+}

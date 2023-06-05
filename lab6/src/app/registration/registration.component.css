@@ -1,0 +1,47 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.submit-button,label,input,h1{
+    font-size: 2.5em;
+}
+
+
+.inner{
+    flex-direction: row;
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+button,h1{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+input{
+    font-weight: 600;
+}
+
+label{
+    margin-right: 0.9em;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .submit-button,label,input,h1{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width:612px) {
+    .submit-button,label,input,h1{
+        font-size: 1.3em;
+    }
+}
+
+

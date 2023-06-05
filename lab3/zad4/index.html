@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad4</title>
+</head>
+<body>
+    <button id="inkrementacja">Test</button>
+    <button id="start">Uruchom licznik</button>
+    <button id="stop">Zatrzymaj licznik</button>
+    <p id="display"></p>
+    <script>
+        let buttonplus = document.getElementById("inkrementacja");
+        buttonplus.addEventListener('click',plus)
+        let buttonstop = document.getElementById("stop");
+        buttonstop.addEventListener('click',stop)
+        let buttonstart = document.getElementById("start");
+        buttonstart.addEventListener('click',start)
+        var count = 0;
+        var start=0;
+        function plus() {
+            if(start==0){
+                return;
+            }
+            if(start==1){
+            count += 1;
+            document.getElementById("display").innerHTML = "Licznik: " + count;
+            }
+            else{
+                document.getElementById("display").innerHTML = "Licznik STOOOOOPP ";
+            }
+        };
+        function stop(){
+            start=0;
+            count=0;
+            document.getElementById("display").innerHTML = "Licznik stop";
+        }
+
+        function start(){
+            if(start==1){
+                return;
+            }
+
+            start=1;
+            document.getElementById("display").innerHTML = "Licznik start";
+        }
+
+    </script>
+</body>
+</html>

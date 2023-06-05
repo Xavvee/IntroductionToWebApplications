@@ -1,0 +1,25 @@
+<ng-container *ngIf="auth.siteRoles?.manager==true">
+    <h1>Panel zarządzania menadżera</h1>
+    <h2>Zarządzaj wycieczkami:</h2>
+    <ng-container *ngIf="trips!=[]">
+        <div class="trips">
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Nazwa</th>
+                    <th>Opcje</th>
+                </tr>
+                <tr *ngFor="let trip of trips">
+                    <td>{{trip.id}}</td>
+                    <td><p>{{trip.name}}</p></td>
+
+                    <td>
+                        <button (click)="deleteTrip(trip.id)" >USUŃ WYCIECZKĘ</button>
+                        <button routerLink="modify">MODYFIKUJ WYCIECZKĘ</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </ng-container>
+    
+</ng-container>

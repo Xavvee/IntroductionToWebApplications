@@ -1,0 +1,106 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:    'header header header header '
+                            'mainpage gallery location contact'
+                            'leftcol pagecontents pagecontents pagecontents'
+                            'footer footer footer footer';
+    background-color: gray;
+    padding: 15px;
+    margin: 0px;
+    grid-auto-flow:dense;
+  }
+
+.header{
+    height: 100px;
+    grid-area: header;
+    background-color: darkgray;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.logo{
+    grid-area: logo;
+    width: 21%;
+    height: 35%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.location{
+    height: 33px;
+    background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contact{
+    height: 33px;
+    grid-area: contact;
+    background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.gallery{
+    height: 33px;
+    grid-area: gallery;
+    background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.mainpage{
+    background-image: repeating-linear-gradient(gray);
+    height: 33px;
+    grid-area: mainpage;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.leftcol{
+
+    grid-area: leftcol;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.pagecontens{
+    height: 220px;
+    grid-area: pagecontents;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer{
+    height: 50px;
+    grid-area: footer;
+    background-color: darkgray;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.godfather
+    { width: 100%; height: 100%; min-width: 1000px; min-height: 1000px; }
+

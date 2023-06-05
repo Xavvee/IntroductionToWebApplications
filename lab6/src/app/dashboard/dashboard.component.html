@@ -1,0 +1,35 @@
+<div class="information">
+    <h2>Informacje o użytkowniku</h2>
+    <ul>
+        <li><strong>Email: </strong> {{auth.userData.email}}</li>
+        <li><strong>UserID: </strong>{{auth.userData.uid}}</li>
+        <li><strong>Konto utworzone: </strong>{{auth.userData.metadata.creationTime}}</li>
+        <li><strong>Ostatnie udane zalogowanie: </strong>{{auth.userData.metadata.lastSignInTime}}</li>
+    </ul>
+    <h2>Twoje role</h2>
+    <ul>
+        <li><strong>Gość: </strong>{{auth.siteRoles.guest}}</li>
+        <li><strong>Klient: </strong>{{auth.siteRoles.client}}</li>
+        <li><strong>Admin: </strong>{{auth.siteRoles.admin}}</li>
+        <li><strong>Menadżer: </strong>{{auth.siteRoles.manager}}</li>
+        <li><strong>Zbanowany:  </strong>{{auth.siteRoles.banned}}</li>
+    </ul>
+
+    <h2>Historia zamówień</h2>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Zamówienia</th>
+        </tr>
+        <ng-container *ngIf="orderHistory!=undefined">
+            <ng-container *ngIf="orderHistoryId.length>0 && trips.length>0">
+                <ng-container *ngFor="let orderId of orderHistoryId">
+                    <tr>
+                        <td>{{orderHistory[orderId].date}}</td>
+                        <td>{{getTripsNames(orderId)}}</td>
+                    </tr>
+                </ng-container>
+            </ng-container>
+        </ng-container>
+    </table>
+</div>

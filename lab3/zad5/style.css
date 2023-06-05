@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+}
+
+.buttons{
+    margin-top: 2vh;
+    margin-left: 40%;
+    margin-right: auto;
+}
+.whole{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10%;
+   text-align: center;
+}
+
+
+.clickY{
+    cursor: pointer;
+    position: absolute;
+    background-color: yellow;
+    margin-bottom: 10%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.clickR{
+    cursor: pointer;
+    position: absolute;
+    background-color: red;
+    margin-bottom: 15%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.clickW{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background-color: azure;
+    border: solid black 1px;
+    width: 30%;
+    height: 50vh;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scoreboard{
+    display: inline-block;
+    background-color: white;
+    font-size: 40px;
+    border: 3px solid black;
+    height: 20vh;
+    width: 12%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.napis{
+    display: inline-block;
+    border: 3px solid black;
+    width: fit-content;
+    height: 30vh;
+    font-size: fit-content;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 20%;
+    min-height: 20vh;
+}
+#score{
+    font-size: 40px;
+}
+
+.off{
+    background-color:rgb(255, 255, 255,0.7) !important;
+    transition: 1s ease-in-out;
+}
+
+P{
+    font-size: 20px;
+}

@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    margin: 0.4em;
+  }
+  
+  .inline {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .information{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 0.2em;
+  }

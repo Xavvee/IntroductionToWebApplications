@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Strona zmieni zdjęcie po kliknięciu w przycisk</h1>
+    <img src="/zad2/góry.jpg" id="zdjecie" >
+    <button id="btn">Zmień zdjęcie</button>
+    <script>
+        let element = document.getElementById('btn')
+        element.addEventListener('click',change)
+        let flag=0;
+        function change(){
+            var ile=4;
+            var images=["/zad2/góry.jpg", "/zad2/łąka.jpg", "/zad2/Nowy-jork.jpg", "/zad2/morze.jpg"]
+            for(elem in images)
+            elem=document.getElementById("zdjecie")
+            elem.src=images[flag%ile];
+            elem.className="image"+(flag%ile);
+            flag++;
+        }
+    </script>
+</body>
+</html>

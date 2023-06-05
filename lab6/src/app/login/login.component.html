@@ -1,0 +1,16 @@
+<div class="form">
+    <h1>Zaloguj się</h1>
+    <form [formGroup]="loginForm">
+        <div class="inner">
+            <label for="name">Email</label>
+            <input id="email" type="text" formControlName="login">
+        </div>
+        <div class="inner">
+            <label for="name">Hasło</label>
+            <input id="password" type="password" formControlName="password">
+        </div>
+    </form>
+    <button type="submit" class="submit-button" (click)="submitLoginForm()">Zatwierdź!</button>
+    <p *ngIf="correctData">Logowanie powiodło się!</p>
+    <p *ngIf="incorrectData">Wprowadź poprawne dane!</p>
+</div>

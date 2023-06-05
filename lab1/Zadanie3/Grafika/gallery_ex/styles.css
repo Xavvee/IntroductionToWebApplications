@@ -1,0 +1,54 @@
+#content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1{
+    border-top: 1px dashed gray;
+    border-left: 1px dashed gray;
+}
+.intro{
+    border-top: 1px dashed gray;
+    border-left: 1px dashed gray; 
+}
+#gallery{
+    display: grid;
+    height: 900px;
+    width: 600px;
+    grid-template-areas:    'figure1 figure2 .'
+                            'figure3 figure4 .'
+                            'figure5 figure6 .';
+}
+
+.figure1{
+    grid-area: figure1;
+    height: 300px;
+    width: 300px;
+}
+
+.figure2{
+    grid-area: figure2;
+    height: 300px;
+    width: 300px;
+}
+.figure3{
+    grid-area: figure3;
+    height: 300px;
+    width: 300px;
+}
+.figure4{
+    grid-area: figure4;
+    height: 300px;
+    width: 300px;
+}
+.figure5{
+    grid-area: figure5;
+    height: 300px;
+    width: 300px;
+}
+.figure6{
+    grid-area: figure6;
+    height: 300px;
+    width: 300px;
+}

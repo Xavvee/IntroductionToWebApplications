@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-kerning: auto;
+    margin: 0;
+    padding:0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:orangered;
+    width:100%;
+    color:black;
+}

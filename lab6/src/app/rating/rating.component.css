@@ -1,0 +1,25 @@
+.opinion {
+    display: flex;
+    flex-direction: row;
+    min-height: 25px;
+    margin-left: 5px;
+}
+
+.stars{
+    transform: scale(1.5);
+}
+
+.star{
+    margin-right: 6.5px;
+    margin-left: 1px;
+}
+button{
+    background-color: wheat;
+    border: 0;
+    cursor: pointer;
+}
+
+p {
+    margin: 2px;
+    padding: 2px;
+}

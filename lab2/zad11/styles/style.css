@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.element-menu{
+    border-bottom: 1px green solid;
+    overflow:hidden;
+    border-left: #006400 solid 1.5px;
+    border-right: #006400 solid 1.5px;
+}
+
+#pozycja1{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#koniec{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.naglowek{
+    display: block;
+    padding: 8%;
+    background-color: #009000;
+    color: white;
+    position: relative;
+}
+
+.podmenu{
+    overflow: hidden;
+    max-height:0vh;
+    transition: 500ms ease all;
+    background: #FFBF00;
+}
+
+.podmenu a{
+    display: block;
+    position: relative;
+    padding: 20px; 
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid #CC5500;    
+}
+
+.podmenu a:before{
+    content: '';
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.podmenu a:hover{
+    background: #004526;
+    background: -moz-linear-gradient( #FFC000 0%, #CC5500	 53%, #F08000 55%, #C04000 100%);
+    background: -webkit-linear-gradient( #FFC000 0%, #CC5500	53%, #F08000 55%, #C04000 100%);
+    background: linear-gradient( #FFC000 0%, #CC5500	53%, #F08000 55%, #C04000 100%);
+    transition: 0,5s all;
+    border-bottom: 1px solid #F28C28;
+}
+
+
+
+.podmenu a:hover:after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    right: 0px;
+    top:0;
+    opacity: 1;
+}
+
+
+.podmenu a:hover:before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    left: 0;
+    top:0;
+    opacity: 1;
+    border-top: 31px solid transparent;
+    border-left: 10px solid aquamarine;
+    border-bottom: 31px solid transparent;
+}
+.podmenu a:after{
+    content: '';
+    opacity: 0;
+    transition: opacity 300ms ease;
+
+}
+.element-menu:target .podmenu{
+    max-height: 50vh;
+}
+
+.naglowek:before{
+    content: '';
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:12px solid #009000;
+}

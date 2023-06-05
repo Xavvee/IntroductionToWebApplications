@@ -1,0 +1,82 @@
+#first{
+    color: red;
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin: 10px;
+    padding: 5%;
+}
+
+#second{
+    color: green;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    margin: auto;
+    padding: 10%;
+}
+
+#third{
+    color: yellow;
+    background-color: crimson;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-small;
+    margin: 100px;
+    padding: 2px;
+}
+
+#fourth{
+    color: blue;
+    background-color: orange;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    margin: 50px;
+    padding: 1%;
+}
+
+
+tr{
+    width: 20%;
+    height: 50px;
+}
+
+.lightgray{
+    background-color: 	rgb(237, 234, 222);
+} 
+
+.darkgray{
+    background-color: 	rgb(224,224,224);
+}
+
+.mainrow{
+    background-color: steelblue;
+    border-bottom: 50px solid transparent;
+}
+
+#firstrow{
+    background-color: darkslategrey;
+    height: 65px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}  
+
+#tabela{
+    width: 75%; 
+    margin-left: auto; 
+    margin-right: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding-bottom: 10%;
+}
+
+.rows{
+    background-color: lightgray;
+    height: 60px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.bordery{
+    border: 2px solid black;
+    border-collapse: collapse;
+}

@@ -1,0 +1,60 @@
+.topbar {
+    background-color: turquoise;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.topbar-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.topbar-item {
+    background-color: rgb(0, 0, 139);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin: 5%;
+    color: white;
+    padding: 1em;
+}
+
+.name {
+    background-color: rgb(0, 0, 139);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    user-select: none;
+    margin: 5%;
+    color: white;
+    padding: 1em;
+}
+
+.name:hover {
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 191, 0);
+}
+
+.topbar-item:hover {
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 191, 0);
+}
+
+h1 {
+    padding: 1em;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}

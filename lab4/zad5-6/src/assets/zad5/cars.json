@@ -1,0 +1,43 @@
+{
+    "Ford":
+        {
+            "Focus":["Niebieski", "Zielony", "Beżowy"],
+            "Mondeo":["Czerwony", "Zielony"],
+            "Kuga":["Niebieski", "Zielony", "Czarny"],
+            "Mustang":["Czerwony", "Zielony", "Niebieski"],
+            "Fiesta":["Czerwony", "Zielony", "Niebieski", "Beżowy"]
+        }
+    ,
+    "Audi":
+    {
+        "A1":["Żółte", "Seledynowe", "Niebieskie", "Czarne", "Srebrne"],
+        "A3":["Żółte", "Seledynowe", "Niebieskie", "Czarne", "Srebrne"],
+        "A4":["Czarne", "Białe"],
+        "A7":["Srebrne", "Czarne"]
+    },
+    "Opel":
+    {
+        "Corsa":["Czerwony", "Biały", "Niebieski", "Czarny", "Srebrny"],
+        "Astra":["Czerwony", "Biały", "Niebieski", "Czarny", "Srebrny"],
+        "Mokka":["Czarny", "Beżowy"],
+        "Insignia":["Srebrny", "Czarny"],
+        "Crossland":["Srebrny"],
+        "Combo":["Beżowy", "Srebrny"],
+        "Movando":["Srebrny", "Czarny"]
+    },
+    "Porsche":
+    {
+        "911 Carrera":["Czarne", "Srebrne"],
+        "Cayenne":["Czerwone", "Czarne"],
+        "Panamera":["Niebieskie"],
+        "Taycan":["Srebrne"],
+        "718":["Czerwone"]
+    },
+    "McLaren":
+    {
+        "720S Coupe5":["Biały", "Srebrny"],
+        "570 GT2":["Czarny", "Czerwony"],
+        "altul4":["Zielony"],
+        "GT4":["Złoty", "Fioletowy"]
+    }
+}

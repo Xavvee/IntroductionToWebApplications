@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.loginer{
+    width: 40%;
+    min-width: 400px;
+    height: fit-content;
+    background-color: darkkhaki;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+input{
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#message {
+    color: white;
+    position: relative;
+    padding: 20px;
+    margin-top: 1.5vh;
+  }
+
+#message p {
+ padding: 10px 35px;
+ font-size: 18px;
+}
+
+.invalid:before {
+    color: red;
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+#submit{
+    background-color: brown;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+#togglePassword1{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin-top: 70px;
+    color: black;
+    margin-left: max(39%,390px);
+    width: 20px;
+    height: 20px;
+}
+
+#togglePassword2{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin-top: 175px;
+    color: black;
+    margin-left: max(39%,390px);
+    width: 20px;
+    height: 20px;
+}
+
+  
+  .valid:before {
+    color: green;
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  

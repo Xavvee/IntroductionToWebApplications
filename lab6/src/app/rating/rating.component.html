@@ -1,0 +1,9 @@
+<div class="opinion">
+    <button mat-icon-button color="red" class="stars" *ngFor="let r of ratingArr; index as i"
+    (click)="ratingApply(i)">
+    <mat-icon class="star">
+        {{returnStar(i)}} 
+    </mat-icon>
+    </button>
+</div>
+<p>Ocena: {{calculateScore()}} ({{tripnoofopinions}} opinii)</p>

@@ -1,0 +1,173 @@
+body{
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:    'Warszawa Lodz Wroclaw Katowice'
+                            'Krakow Gdansk Szczecin Poznan'
+                            '. Torun Czestochowa .';
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    padding: 15px;
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.empty{
+    height: 70vh;
+    width: 1fr;
+}
+
+.galeria1{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 30px #ccc;
+    font-size: 30px;
+    text-align: center;
+    height: 70vh;
+    border-radius: 7px;
+    position: relative;
+}
+
+.napis{
+    position: relative;
+    width: 90%;
+    height: 58%;
+    overflow: hidden;
+    font-size: x-small;
+    margin:auto;
+    word-wrap: break-all;
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: medium;
+    text-align: left;
+    margin-bottom: 3%;
+    font-family: Cambria, Georgia, serif;
+}
+
+.opis{
+    text-align: left;
+    color: crimson;
+    margin: 0;
+    font-size: small;
+    font-family: Cambria, Georgia, serif;
+    margin-bottom: 5%;
+}
+
+p{
+    text-align: left;
+    color:black;
+    margin-top: 0;
+    font-size: small;
+}
+
+.dolek{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    bottom: 0;
+    left:0;  
+}
+
+.block{
+    height: 70%;
+    width: 30%;
+    background-color: crimson;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-small;
+    color: white;
+    position: absolute;
+    align-items: center;
+    display: flex;
+}
+
+h2{
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.likekom{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 70%;
+    float: right;
+    margin-left: auto;
+    margin-right: 0;
+    row-gap: 10% ;
+}
+.comment{
+    height: 50%;
+    width: 100%;
+}
+
+.like{
+    height: 50%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+    p { font-size: 14px; }
+}
+  
+@media only screen and (max-width: 610px) {
+    p { font-size: 16px; }
+}
+  
+@media only screen and (max-width: 800px){
+    p { font-size: 14.5px; }
+}
+@media only screen and (max-width: 1070px){
+    p { font-size: 15px; }
+}
+
+@media only screen and (max-width: 1070px) {
+    .grid {
+        display: grid;
+        grid-template-areas:    'Warszawa Lodz'
+                                'Wroclaw Katowice'
+                                'Krakow Gdansk'
+                                'Szczecin Poznan'
+                                'Torun Czestochowa'
+                                ;
+        grid-auto-columns: 1fr;
+        padding: 15px;
+        column-gap: 3%;
+        row-gap: 3%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-areas:    'Warszawa'
+                                'Lodz'
+                                'Wroclaw'
+                                'Katowice'
+                                'Krakow'
+                                'Gdansk'
+                                'Szczecin'
+                                'Poznan'
+                                'Torun'
+                                'Czestochowa'
+                                ;
+        grid-auto-columns: 1fr;
+        padding: 15px;
+        row-gap: 1%;
+    }
+}

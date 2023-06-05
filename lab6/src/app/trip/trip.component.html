@@ -1,0 +1,37 @@
+<ng-container *ngIf="trip.length>0">
+    <div class="main">
+        <img src={{trip[0].imagelink}}>
+        <div class="rest">
+            <h1>{{trip[0].name}}</h1>
+            <h2 class="shdesc">Lokalizacja: {{ trip[0].country}}</h2>
+            <p class="desc">{{ trip[0].shortdesc }}</p>
+            <p class="ingr">Kontynent: {{ trip[0].region }}</p>
+            <p >Termin:</p> 
+            <p class="date">od {{trip[0].startdate}} do {{trip[0].enddate}}</p>
+            <h2>Kup już za: <span class="price">{{trip[0].price}} zł</span></h2>
+            <app-rating (ratioChange)="ratingApplier(trip[0],$event)" [tripnoofopinions]="trip[0].noofopinions"
+            [tripsumofopinions]="trip[0].sumofopinions"></app-rating>
+        </div>
+    </div>
+
+
+    <h2 *ngIf="reviews.length>0">Recenzje:</h2>
+    <div class="review" *ngFor="let review of reviews">
+        <span class="strong">Użytkownik: </span><span>{{review.nick}}</span>
+        <p></p>
+        <span class="strong">Wycieczka:</span><span>{{trip[0].name}}</span>
+        <p></p>
+        <span class="strong">Data: </span><span>{{review.date}}</span>
+        <p></p>
+        <span class="strong">Treść: </span><span>{{review.review}}</span>
+    </div>
+    <app-reviews (newReviewEvent)="addReview($event)"></app-reviews>
+
+</ng-container>
+<div class="inner">
+    <a routerLink="/trips">
+        <div class="infobtn">
+            Powrót do wycieczek
+        </div>
+    </a>
+</div>

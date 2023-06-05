@@ -1,0 +1,31 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 40vh;
+    background-color: white;
+    border-width: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+div{
+    border: 2px solid black;
+    margin-bottom: 3%;
+}
+
+.small{
+    width: 25%;
+    background-color: red;
+}
+
+.big{
+    width: 70%;
+    background-color: lightblue;
+    float: right;
+}
+
+.biggest{
+    width: 100%;
+    background-color: yellow;
+}

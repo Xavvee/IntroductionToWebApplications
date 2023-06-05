@@ -1,0 +1,46 @@
+body {
+      font: 1.2em Helvetica, Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+
+    section {
+      width: 20%;
+      height: fit-content;
+      border: 2px solid steelblue;
+    }
+
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-left: 2px dotted steelblue;
+      border-top: 2px dotted steelblue;
+	    height: 100%;
+    }
+
+    .box>* {
+      padding: 20px;
+      border: 2px solid rgb(96, 139, 168);
+      border-radius: 5px;
+      background-color: rgba(96, 139, 168, .2);
+      margin: 0,5px;
+    }
+
+    .selected{
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div:nth-child(2){
+      width: 20%;
+    }
+
+    div:nth-child(4){
+      width: 20%;
+    }
+    
+ 
+    
